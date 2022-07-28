@@ -4,7 +4,7 @@ const card = document.querySelector('.card')
 
 user('RinniVatsa')
 async function user (username) {
-    const resp = fetch(`http://api.github.com/users/${username}`)
+    const resp = fetch(`https://api.github.com/users/${username}`)
     const respData = (await resp).json()
     console.log(respData);
     return respData
